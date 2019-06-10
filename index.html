@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+    
+    <head>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+        <style>
+            img{
+                max-width: 100%;
+            }
+        </style>
+        <title>A trippy Doom by STGraves.</title>
+
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/library.js"></script>
+        <script src="assets/js/mainloop.js"></script>
+        <script src="assets/js/scenes.js"></script>
+        <style>
+
+            .ge-mainscreen {
+                display: inline;
+                position: fixed;
+                left: 235px;
+            }        
+
+            .ge-minimap {
+                position: fixed;
+                display: inline; /*debugmodemap*/
+                left: 15px;
+                top: 150px;
+           }
+
+            .ge-minimap canvas {
+                border: solid 1px;
+            }
+            .ge-debug {
+                display:inline;
+                color: gray;
+            }
+            body {
+                background-color: black;
+            }
+
+        </style>
+
+    </head>
+    
+    <body onload="atd.main.init()">
+        <div class="ge-debug" id="debug"></div>
+        <canvas class="ge-mainscreen" id="screen"></canvas>    
+      <div class="ge-minimap" id="minimap"></div>
+    </body>
+</html>
